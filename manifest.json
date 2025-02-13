@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://chatgpt.com/*"],
+      "matches": ["<all_urls>"],
       "css": ["styles.css", "popup.css"],
       "js": ["katex.min.js", "confetti.js", "content.js"]
     }
@@ -27,7 +27,7 @@
   "web_accessible_resources": [
     {
       "resources": ["popup.html", "popup.css"],
-      "matches": ["https://chat.openai.com/*"]
+      "matches": ["<all_urls>"] 
     }
   ],
   "background": {
